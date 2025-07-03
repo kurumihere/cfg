@@ -19,8 +19,6 @@ setxkbmap -layout us,ru -option grp:alt_shift_toggle
 xset -dpms
 xset s off
 
-xcompmgr -cCfF -r5 -l-5 -t-5 -o.55 -D1
-
 feh --bg-center $HOME/wallpapers/blackpink.jpg
 
 conky | aebar -b -g x16 -B "#171717" -F "#FFFFFF" -f "JetBrainsMono Nerd Font Mono:size=10"

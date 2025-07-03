@@ -1,4 +1,3 @@
-#by kurumi
 CC = gcc
 CFLAGS = -O3 -Wno-unused-result
 TARGET = install
@@ -10,5 +9,3 @@ $(TARGET): install.c
 
 clean:
 	rm -f $(TARGET)
-
-.PHONY: all clean
