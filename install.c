@@ -20,8 +20,8 @@
 
 inline void static cmdexec(const char *cmd)
 {
-  printf("CMD\t%s\n",cmd);
-  system(cmd);
+  printf("CMD\t%s\n", cmd);
+  (void)system(cmd);
 }
 
 int main(void)
@@ -29,6 +29,8 @@ int main(void)
   cmdexec("mkdir ~/scripts");
   cmdexec("cp -rf files/aebar.sh ~/scripts/aebar.sh");
   cmdexec("chmod +x ~/scripts/aebar.sh");
+  cmdexec("mkdir ~/progs/aebar/");
+  cmdexec("cp -rf files/aebar/* ~/progs/aebar/");
   cmdexec("mkdir ~/progs/st/");
   cmdexec("cp -rf files/st/* ~/progs/st/");
   cmdexec("mkdir ~/progs/dmenu");
@@ -43,6 +45,8 @@ int main(void)
   cmdexec("cp -rf files/sxhkdrc ~/.config/sxhkd/sxhkdrc");
   cmdexec("mkdir ~/wallpapers");
   cmdexec("cp -rf files/blackpink.jpg ~/wallpapers/");
+  cmdexec("cd ~/progs/aebar");
+  cmdexec("sudo make install clean");
   cmdexec("cd ~/progs/st");
   cmdexec("sudo make install clean");
   cmdexec("cd ~/progs/dmenu");

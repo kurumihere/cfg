@@ -1,6 +1,6 @@
 #by kurumi
 CC = gcc
-CFLAGS = -Wall
+CFLAGS = -O3 -Wno-unused-result
 TARGET = install
 
 all: $(TARGET)
