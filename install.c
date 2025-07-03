@@ -46,8 +46,8 @@ int main(void)
   cmdexec("cd ~/progs/st");
   cmdexec("sudo make install clean");
   cmdexec("cd ~/progs/dmenu");
-  cmdexec("sudo make install clean";
+  cmdexec("sudo make install clean");
   cmdexec("cd ~/");
-  puts(SUCCESS);
+  puts("SUCCESS");
   return EXIT_SUCCESS;
 }
