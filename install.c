@@ -44,7 +44,7 @@ int main(void)
   cmdexec("cp -rf files/sc.sh ~/.config/sxhkd/sc.sh");
   cmdexec("cp -rf files/sxhkdrc ~/.config/sxhkd/sxhkdrc");
   cmdexec("mkdir ~/wallpapers");
-  cmdexec("cp -rf files/blackpink.jpg ~/wallpapers/");
+  cmdexec("cp -rf files/black.jpg ~/wallpapers/");
   cmdexec("cd ~/progs/aebar");
   cmdexec("sudo make install clean");
   cmdexec("cd ~/progs/st");
@@ -52,6 +52,6 @@ int main(void)
   cmdexec("cd ~/progs/dmenu");
   cmdexec("sudo make install clean");
   cmdexec("cd ~/");
-  puts("SUCCESS");
+  puts("RESPECT");
   return EXIT_SUCCESS;
 }

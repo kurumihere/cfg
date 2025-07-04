@@ -4,7 +4,7 @@ pgrep -x sxhkd > /dev/null || sxhkd &
 
 bspc monitor -d 1 2 3 4
 
-bspc config border_width         1
+bspc config border_width         2
 bspc config window_gap          0
 bspc subscribe node_add | while read -r _ _ _ node_id; do
     win_count=$(bspc query -N -d focused -n .tiled | wc -l)
@@ -26,7 +26,7 @@ bspc config gapless_monocle      true
 
 bspc config normal_border_color "#111111"
 bspc config active_border_color "#FFFFFF"
-bspc config focused_border_color "#373737"
+bspc config focused_border_color "#11181E"
 
 setxkbmap -layout us,ru -option grp:alt_shift_toggle
 
@@ -34,6 +34,6 @@ xset r rate 220 40
 xset -dpms
 xset s off
 
-feh --bg-center $HOME/wallpapers/blackpink.jpg
+feh --bg-scale $HOME/wallpapers/dark.jpg
 
-conky | aebar -b -g x24 -B "#171717" -F "#FFFFFF" -f "JetBrainsMono Nerd Font Mono:size=14"
+conky | aebar -b -g x16 -B "#11181E" -F "#CECECE" -f "JetBrainsMono Nerd Font Mono:size=10"
